@@ -7,7 +7,7 @@ const morgan = require('morgan');
 const app = express();
 
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin:config.frontend_url,
   credentials: true
 }));
 
