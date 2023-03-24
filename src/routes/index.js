@@ -46,13 +46,17 @@ router.get('/docs', swaggerUi.setup(swaggerSpec));
  *         description: Invalid username/password
  */
 
+const roles=[
+  2001
+]
+
 const loginRoute = router.post('/login', (req, res) => {
   // Mock authentication - accept any username/password
   const { username, password } = req.body;
   const token = jwt.sign({ username, password }, config.jwt_secret, {
     expiresIn: '1h',
   });
-  res.json({ token });
+  res.json({ token,roles });
 });
 
 /**
