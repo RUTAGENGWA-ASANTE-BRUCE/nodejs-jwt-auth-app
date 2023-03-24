@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  test_nodejs_microservice:
+    build: .
+    ports:
+      - '3400:3400'
+    volumes:
+      - ./src:/app/srcs
+      - ./package.json:/app/package.json
