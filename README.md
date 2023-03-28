@@ -4,7 +4,7 @@ This Node.js API allows users to login and apply JSON patches to documents.
 
 ### Getting Started
 
-1. Clone the repository: `git clone https://github.com/RUTAGENGWA-ASANTE-BRUCE/improved-invention`
+1. Clone the repository: `git clone https://github.com/RUTAGENGWA-ASANTE-BRUCE/nodejs-jwt-auth-app`
 
 2. Build the Docker image: `docker build -t test_nodejs_microservice .`
 
